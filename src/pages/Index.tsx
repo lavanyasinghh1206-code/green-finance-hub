@@ -1,19 +1,19 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import Dashboard from "@/components/Dashboard";
-import Investments from "@/components/Investments";
-import Footer from "@/components/Footer";
+import MessHeader from "@/components/mess/MessHeader";
+import MessHero from "@/components/mess/MessHero";
+import FoodListings from "@/components/mess/FoodListings";
+import HowItWorks from "@/components/mess/HowItWorks";
+import ImpactStats from "@/components/mess/ImpactStats";
+import MessFooter from "@/components/mess/MessFooter";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
-      <Hero />
-      <Features />
-      <Dashboard />
-      <Investments />
-      <Footer />
+      <MessHeader />
+      <MessHero />
+      <FoodListings />
+      <HowItWorks />
+      <ImpactStats />
+      <MessFooter />
     </div>
   );
 };
