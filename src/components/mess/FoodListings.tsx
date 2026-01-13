@@ -1,7 +1,11 @@
+import { useState } from "react";
 import { Clock, MapPin, Users, Star, Flame } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+
+
+
 
 interface FoodItem {
   id: number;
@@ -101,7 +105,17 @@ const foodItems: FoodItem[] = [
   },
 ];
 
-const FoodListings = () => {
+
+  
+ const FoodListings = () => {
+  const [reservedItems, setReservedItems] = useState<number[]>([]);
+
+  const handleReserve = (id: number) => {
+    setReservedItems((prev) => [...prev, id]);
+  };
+
+  
+
   return (
     <section id="available" className="py-16 bg-background">
       <div className="container mx-auto px-4">
@@ -181,9 +195,14 @@ const FoodListings = () => {
                     <span className="text-2xl font-bold text-primary">₹{item.discountedPrice}</span>
                     <span className="text-sm text-muted-foreground line-through">₹{item.originalPrice}</span>
                   </div>
-                  <Button size="sm" className="gradient-nature text-primary-foreground">
-                    Reserve
-                  </Button>
+                  <Button
+  size="sm"
+  className="gradient-nature text-primary-foreground"
+  onClick={() => handleReserve(item.id)}
+  disabled={reservedItems.includes(item.id)}
+>
+  {reservedItems.includes(item.id) ? "Reserved" : "Reserve"}
+</Button>
                 </div>
               </CardFooter>
             </Card>

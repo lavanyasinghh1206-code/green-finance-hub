@@ -21,15 +21,15 @@ const stats = [
   {
     icon: IndianRupee,
     value: "₹4.2L",
-    label: "Student Savings",
-    sublabel: "Avg ₹150/student/month",
+    label: "ReServer's Savings",
+    sublabel: "Avg ₹150/month",
     trend: "+31%",
     color: "text-accent",
   },
   {
     icon: Users,
     value: "2,847",
-    label: "Active Students",
+    label: "Active ReServers",
     sublabel: "Across 8 hostels",
     trend: "+45%",
     color: "text-primary",
@@ -45,9 +45,9 @@ const ImpactStats = () => {
             <Leaf className="w-4 h-4" />
             <span>Making Real Impact</span>
           </div>
-          <h2 className="text-3xl font-bold text-foreground mb-3">Our Campus Footprint</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-3">Impact Receipt</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Together, we're transforming how our campus handles food surplus
+            Together, we're transforming how campuses handles food surplus
           </p>
         </div>
 
@@ -83,7 +83,7 @@ const ImpactStats = () => {
               <h3 className="text-2xl font-bold text-foreground mb-4">Environmental Savings</h3>
               <p className="text-muted-foreground mb-6">
                 Every meal rescued means less food rotting in landfills, fewer greenhouse gas emissions, 
-                and more resources saved. Here's what we've achieved together this year:
+                and more resources saved. Here's what we've achieved together with ReServe:
               </p>
               <div className="space-y-4">
                 <div>

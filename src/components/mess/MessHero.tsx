@@ -14,17 +14,17 @@ const MessHero = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-primary-foreground/10 backdrop-blur-sm px-4 py-2 rounded-full text-sm mb-6">
             <Leaf className="w-4 h-4" />
-            <span>Join 2,500+ students saving food daily</span>
+            <span>Join 2,500+ ReServers saving food daily</span>
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            Rescue Surplus Food from
-            <span className="block text-accent">Your Hostel Mess</span>
+            ReServe
+            <span className="block text-accent">Good Food Deserves a Second ReServe</span>
           </h1>
 
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-            Get delicious meals at 50-70% off. Help reduce food waste. 
-            Fresh leftovers from today's mess, ready for pickup.
+            With ReServe, reserve surplus mess meals and help reduce food wastage.
+            
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

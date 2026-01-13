@@ -13,12 +13,12 @@ const MessFooter = () => {
                 <Utensils className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="text-lg font-bold">MessSaver</h3>
+                <h3 className="text-lg font-bold">ReServe</h3>
                 <p className="text-xs text-primary-foreground/70">Hostel Food Rescue</p>
               </div>
             </div>
             <p className="text-sm text-primary-foreground/70 mb-4">
-              Connecting students with surplus mess food. Save money, reduce waste, eat well.
+              Connecting people with surplus mess food. Save money, reduce waste, eat well.
             </p>
             <div className="flex gap-3">
               <Button variant="ghost" size="icon" className="hover:bg-primary-foreground/10">
@@ -45,7 +45,7 @@ const MessFooter = () => {
             <ul className="space-y-3 text-sm text-primary-foreground/70">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>hello@messsaver.in</span>
+                <span>hello@ReServe.in</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
@@ -53,7 +53,7 @@ const MessFooter = () => {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>Student Activity Center, Campus</span>
+                <span>JIIT, Sector-62, Noida</span>
               </li>
             </ul>
           </div>
@@ -76,7 +76,7 @@ const MessFooter = () => {
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-          <p>© 2024 MessSaver. A student-led sustainability initiative.</p>
+          <p>© 2026 ReServe. A student-led sustainability initiative.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-primary-foreground transition-colors">Terms of Service</a>
