@@ -27,7 +27,7 @@ The Tech That Would Makes ReServe Possible
 
 ·        Frontend: HTML, CSS, JavaScript,React for UI.
 
-·        Backend : Firebase / simple database for listings
+·        Backend : Supabase/ simple database for listings
 
 ·        UI Design: Simple cards, buttons, and dashboards
 
