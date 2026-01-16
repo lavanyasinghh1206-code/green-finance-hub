@@ -110,9 +110,11 @@ const foodItems: FoodItem[] = [
  const FoodListings = () => {
   const [reservedItems, setReservedItems] = useState<number[]>([]);
 
-  const handleReserve = (id: number) => {
-    setReservedItems((prev) => [...prev, id]);
-  };
+ const handleReserve = (id: number) => {
+  setReservedItems((prev) => [...prev, id]);
+  alert("✅ Your order has been placed!");
+};
+
 
   
 

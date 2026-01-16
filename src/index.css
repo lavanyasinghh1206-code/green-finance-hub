@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,11 +16,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 150 30% 15%;
 
-    /* Deep emerald green - trust & sustainability */
+    /* Deep emerald green */
     --primary: 160 84% 20%;
     --primary-foreground: 40 30% 98%;
 
-    /* Warm sand - organic feel */
+    /* Warm sand */
     --secondary: 35 40% 92%;
     --secondary-foreground: 150 30% 20%;
 
@@ -41,12 +41,33 @@
 
     --radius: 1rem;
 
-    /* Custom tokens */
-    --gradient-nature: linear-gradient(135deg, hsl(160 84% 20%) 0%, hsl(165 60% 35%) 50%, hsl(140 50% 45%) 100%);
-    --gradient-earth: linear-gradient(180deg, hsl(35 40% 95%) 0%, hsl(40 30% 98%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(140 20% 98%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(160 84% 15%) 0%, hsl(165 70% 25%) 100%);
-    
+    /* Gradients */
+    --gradient-nature: linear-gradient(
+      135deg,
+      hsl(160 84% 20%) 0%,
+      hsl(165 60% 35%) 50%,
+      hsl(140 50% 45%) 100%
+    );
+
+    --gradient-earth: linear-gradient(
+      180deg,
+      hsl(35 40% 95%) 0%,
+      hsl(40 30% 98%) 100%
+    );
+
+    --gradient-card: linear-gradient(
+      145deg,
+      hsl(0 0% 100%) 0%,
+      hsl(140 20% 98%) 100%
+    );
+
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(160 84% 15%) 0%,
+      hsl(165 70% 25%) 100%
+    );
+
+    /* Shadows */
     --shadow-soft: 0 4px 20px -4px hsl(160 40% 20% / 0.08);
     --shadow-card: 0 8px 32px -8px hsl(160 40% 20% / 0.12);
     --shadow-elevated: 0 20px 60px -20px hsl(160 40% 20% / 0.2);
@@ -56,15 +77,6 @@
     --eco-good: 85 60% 45%;
     --eco-moderate: 45 80% 50%;
     --eco-poor: 15 80% 55%;
-
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
@@ -89,16 +101,11 @@
     --accent: 165 60% 45%;
     --accent-foreground: 150 30% 8%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 100%;
-
     --border: 150 20% 20%;
     --input: 150 20% 20%;
     --ring: 160 70% 45%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -118,27 +125,27 @@
   .gradient-nature {
     background: var(--gradient-nature);
   }
-  
+
   .gradient-earth {
     background: var(--gradient-earth);
   }
-  
+
   .gradient-card {
     background: var(--gradient-card);
   }
-  
+
   .gradient-hero {
     background: var(--gradient-hero);
   }
-  
+
   .shadow-soft {
     box-shadow: var(--shadow-soft);
   }
-  
+
   .shadow-card {
     box-shadow: var(--shadow-card);
   }
-  
+
   .shadow-elevated {
     box-shadow: var(--shadow-elevated);
   }

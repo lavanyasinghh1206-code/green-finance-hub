@@ -1,8 +1,18 @@
 import { Utensils, Mail, Phone, MapPin, Instagram, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useState } from "react";
+
 
 const MessFooter = () => {
+  const [email, setEmail] = useState("");
+const [joined, setJoined] = useState(false);
+
+const handleJoin = () => {
+  if (email.trim() === "") return;
+  setJoined(true);
+};
+
   return (
     <footer className="bg-foreground text-primary-foreground py-12">
       <div className="container mx-auto px-4">
@@ -64,13 +74,21 @@ const MessFooter = () => {
               Know when your favorite mess has surplus food!
             </p>
             <div className="flex gap-2">
-              <Input 
-                placeholder="Your email" 
-                className="bg-primary-foreground/10 border-primary-foreground/20 placeholder:text-primary-foreground/50"
-              />
-              <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
-                Join
-              </Button>
+             <Input 
+  placeholder="Your email"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  className="bg-primary-foreground/10 border-primary-foreground/20 placeholder:text-primary-foreground/50"
+/>
+
+              <Button
+  onClick={handleJoin}
+  disabled={joined}
+  className="bg-accent text-accent-foreground hover:bg-accent/90 disabled:opacity-70"
+>
+  {joined ? "Joined" : "Join"}
+</Button>
+
             </div>
           </div>
         </div>

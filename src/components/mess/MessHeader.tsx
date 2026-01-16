@@ -1,6 +1,7 @@
 import { Utensils, Bell, User, ShoppingBag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 const MessHeader = () => {
   return (
@@ -42,10 +43,14 @@ const MessHeader = () => {
                 2
               </Badge>
             </Button>
-            <Button variant="outline" size="sm" className="gap-2">
-              <User className="w-4 h-4" />
-              <span className="hidden sm:inline">Login</span>
-            </Button>
+            
+
+<Link to="/login">
+  <Button variant="outline" size="sm" className="gap-2">
+    <User className="w-4 h-4" />
+    <span className="hidden sm:inline">Login</span>
+  </Button>
+</Link>
           </div>
         </div>
       </div>
